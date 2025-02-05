@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Stunning Blog about personal branding, architecture, engineering, and writing as a passion.">
+    <title>Stunning Blog</title>
+    <link rel="stylesheet" href="blog.css">
+    <style>
+        /* Base styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        a {
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo img {
+            width: 150px;
+            margin: 0 auto;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        nav a:hover {
+            color: #ffdf5d;
+        }
+
+        /* Main Section */
+        main {
+            margin: 0;
+            padding: 0;
+        }
+
+        .text-box {
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(to bottom, #2575fc, #6a11cb);
+            color: white;
+        }
+
+        .text-box h3 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .text-box p {
+            font-size: 1.2rem;
+        }
+
+        .visit-btn {
+            background: #ffdf5d;
+            color: #333;
+            padding: 15px 30px;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .visit-btn:hover {
+            background: #ffd700;
+        }
+
+        /* Flip Cards */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 50px 20px;
+            background: #f9f9f9;
+        }
+
+        .flip-card {
+            perspective: 1000px;
+            width: 300px;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front, .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 15px;
+        }
+
+        .flip-card-front {
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .flip-card-front img {
+            border-radius: 15px;
+        }
+
+        .flip-card-back {
+            background: #6a11cb;
+            color: white;
+            transform: rotateY(180deg);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Content Section */
+        .line {
+            text-align: center;
+            padding: 50px 20px;
+            background: #fff;
+            color: #333;
+        }
+
+        .line h1 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+        }
+
+        .line img {
+            width: 75%;
+            margin: 30px 0;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            padding: 40px 20px;
+        }
+
+        footer .container1 {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        footer h4 {
+            margin-bottom: 10px;
+        }
+
+        footer ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        footer ul li {
+            margin-bottom: 10px;
+        }
+
+        footer ul li a {
+            color: #ccc;
+        }
+
+        footer ul li a:hover {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./image/logo.png" alt="Stunning Blog Logo">
+        </div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#course">Course</a>
+            <a href="#blog">Blog</a>
+            <a href="#faqs">FAQs</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="text-box">
+            <h3>What It Really Means To Build A Personal Brand on Social Media</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a href="about.html" class="visit-btn">Visit us to know more</a>
+        </section>
+
+        <section class="row">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="./image/third.jpg" alt="Architect Image">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>John Doe</h1>
+                        <p>Architect & Engineer</p>
+                        <p>We love that guy</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="./image/second.jpg" alt="Engineer Image">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Jane Smith</h1>
+                        <p>Innovator & Designer</p>
+                        <p>We admire her work</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="./image/first.jpg" alt="Visionary Image">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Alex Taylor</h1>
+                        <p>Visionary Leader</p>
+                        <p>Making dreams reality</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="line">
+            <h1>TheGem: No Job is Insignificant When Passion Meets Purpose</h1>
+            <p>Writing: Start a blog, write a book, or freelance as a content writer, copywriter, or ghostwriter.</p>
+            <img src="./image/third.jpg" alt="Writing Passion">
+            <p>Writing is one of the most versatile and rewarding passions you can pursue. Whether you’re expressing yourself through personal essays, creating engaging content for businesses, or crafting stories that transport readers to another world, writing offers endless possibilities for creativity and connection.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container1">
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Affiliate Program</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Get Help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Order Status</a></li>
+                    <li><a href="#">Payment Options</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Online Shop</h4>
+                <ul>
+                    <li><a href="#">Watch</a></li>
+                    <li><a href="#">Bag</a></li>
+                    <li><a href="#">Shoes</a></li>
+                    <li><a href="#">Dress</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

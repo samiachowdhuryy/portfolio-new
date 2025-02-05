@@ -1,0 +1,209 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(141deg, #305f72 0%, #568ea6 51%, white 75%);
+
+}
+.hero {
+    height: 70vh;
+    background: url('hero-image.jpg') center/cover no-repeat;
+}
+.card {
+    transition: transform 0.3s ease;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+
+        /* Wrapper for border effect */
+        .image-wrapper {
+            display: inline-block;
+            border: 3px solid transparent; /* No border by default */
+            border-radius: 10px; /* Optional: rounded corners */
+            transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            padding: 0 px; /* Small padding to ensure border is visible */
+        }
+
+        /* Border appears on hover */
+        .image-wrapper:hover {
+            border-color: #568ea6; /* Pink border */
+            box-shadow: 0 0 10px rgba(255, 105, 180, 0.7); /* Light glow effect */
+        }
+
+        /* Ensure images fit inside wrapper */
+        .image-wrapper img {
+            width: 100%; /* Makes images responsive */
+            height: 100%;
+            border-radius: 10px; /* Match wrapper corners */
+        }
+
+/* Project Card Enhancements */
+.project-card {
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+/* Different Colors for Each Card */
+/* .bg-gradient-blue {
+    background: linear-gradient(135deg, #007bff, #00c6ff);
+}
+
+.bg-gradient-purple {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+}
+
+.bg-gradient-orange {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+} */
+
+/* Hover Effects */
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Project Image with Overlay */
+.project-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-img img {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    opacity: 0.9;
+}
+
+.project-img .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.project-img:hover .overlay {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* Button Customization */
+.btn-light {
+    color: black;
+    background: white;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.btn-light:hover {
+    background: ;
+    color: grey;
+}
+/* Smaller Quote Box */
+.quote-box {
+    /* background: #222;  */
+    /* Dark background */
+    color: white; /* Text color */
+    text-align: center;
+    padding: 40px; /* Reduced padding */
+    border-radius: 10px;
+    font-size: 18px; /* Smaller text */
+    font-weight: bold;
+    width: 50%; /* Set a fixed width */
+    margin: 20px auto; /* Centered */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    border: 3px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Glowing Border Effect */
+.quote-box:hover {
+    border-color: #305f72;
+     /* Glowing Yellow */
+    box-shadow: 0 0 15px #305f72;
+    transform: scale(1.05);
+}
+/* Social Links Styling */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+/* Style for Icons */
+.social-links a {
+    font-size: 35px;
+    color: #568ea6; /* Default icon color */
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/* Hover Effects - Change Colors */
+.social-links .linkedin:hover { color: #0077b5; }   /* LinkedIn Blue */
+.social-links .github:hover { color: #333; }       /* GitHub Black */
+.social-links .twitter:hover { color: #1DA1F2; }   /* Twitter Blue */
+.social-links .instagram:hover { color: #E1306C; } /* Instagram Pink */
+
+/* Smooth Hover Effect */
+.social-links a:hover {
+    transform: scale(1.2);
+}
+
+
+
+
+
+
+.project-card {
+    background: transparent; /* Initially transparent */
+    box-shadow: none; /* Remove shadow */
+    transition: background 0.5s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.project-card .card-body {
+    color: white; /* Keep text visible */
+}
+
+.project-card:hover {
+    background: #f0b7a4; /* Appears on hover */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow */
+}
+
+
+.skills-section {
+    background: linear-gradient(to right, #f1d1b5, #f0b7a4);
+    color: white;
+    padding: 50px 20px;
+    border-radius: 10px;
+}
+
+.skill-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.skill-card i {
+    font-size: 50px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.skill-card h5 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.skill-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+}

@@ -1,0 +1,368 @@
+
+*{
+     margin: 0;
+    padding: 0;
+}
+.logo img {
+    height: 80px; /* Adjust as needed */
+    width: auto; /* Maintain aspect ratio */
+    margin-top: 0;
+    margin-right: 40px;
+    margin-left: 530px;
+    /* Space between logo and links */
+    vertical-align: center; /* Align with text in the navbar */
+    /* padding: 10px; */
+    
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: center;
+
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 12px;
+    position: center;
+}
+.nav-links ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-links ul li::after{
+    content:"";
+    width: 0%;
+    height: 2px;
+    background: pink;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box img{
+    width: 90%;
+    height: auto;
+}
+.text-box{
+    width: 90%;
+    height: 50%;
+    color: black;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center; 
+    margin: 0px;
+    padding: 40px; /* Add padding to prevent the text from touching the edges */
+    background-image: url(./image/Road\ HD\ Wallpaper.jpg); /* Add the path to your image */
+    background-size: cover; /* Cover the entire area of the text-box */
+    background-position: center; /* Position the image in the center */
+    background-repeat: no-repeat; /* Ensure the image does not repeat */
+    border-radius: 10px; /* Optional: to round the corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    opacity: 0.6;
+}
+.text-box h3{
+    font-size: 40px;
+    color: white;
+}
+.text-box p{
+    margin: 10px 0 0px;
+    font-size: 20px;
+    color: white;
+}
+.visit-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1.5px solid pink;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    margin: 60px;
+}
+.visit-btn:hover{
+    border:1.5px solid pink;
+    background: pink;
+    transition: 0.5s;
+}
+
+/*card*/
+img{
+   width: 500px;
+    height: 100%;  
+    margin-top: 0;
+}
+.container{
+    width: 500px;
+    height: 100px;
+    border: 1px solid #f00101;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40%;
+    margin-left: 30%;
+    /* align-content: flex-start; */
+    
+    /* display: flex;
+    justify-content: space-between ;
+    height: 200vh;
+    align-items: center;
+    margin:20%;
+    margin-top: 50%; */
+}
+.div{
+    display: flex;
+    justify-content: space-around;
+    /* justify-items: center; */
+    /* align-content: space-between; */
+    margin-right: 60px;
+    
+    width: 500px;
+    height: 100px;
+}
+.card1 {
+    background-image: url(./image/first.jpg);
+    width: 500px;
+    height: 500px;
+
+}
+.card2{
+    background-image: url(./image/second.jpg);
+    width: 500px;
+    height: 500px;
+}
+.card3 {
+    background-image: url(./image/second.jpg);
+    width: 500px;
+    height: 500px;
+}
+.card1{
+    position: relative;
+}
+.intro {
+    position: absolute; /* Allows positioning over the image */
+    top: 50%; /* Position at the center vertically */
+    left: 50%; /* Position at the center horizontally */
+    transform: translate(-50%, -50%); /* Center the text */
+    color: white; /* Text color */
+    font-size: 20px; /* Adjust font size as needed */
+    font-weight: bold; /* Bold text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add shadow for better readability */
+}
+/* Float four columns side by side */
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
+
+  .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #ccc;
+    color: white;
+    transform: rotateY(180deg);
+  }
+/* 
+  .footer {
+    text-align: center;
+    padding: 3px;
+    background-color: DarkSalmon;
+    color: white;
+  } */
+  ul{
+	list-style: none;
+}
+.footer{
+	background-color: #8b8889;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+
+
+.container1{
+	max-width: 1170px;
+	margin:auto;
+}
+.row1{
+	display: flex;
+	flex-wrap: wrap;
+}
+.line h1{
+    padding: 20px;
+}
+.line p{
+    padding: 20px;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.image{
+  float: left;
+  width: 50%;
+  height: 10%;
+  padding: 20px;
+  /* transition: transform 0.5s ease; */
+}
+/* .image:hover{
+  transform: scale(1,2);
+} */
+.flex::after{
+    /* display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 200px;
+    height: auto;
+    */
+    
+      content: "";
+      clear: both;
+      display: table;
+     
+}
+.flex{
+  /* scroll-behavior: smooth; */
+  /* opacity: 1;
+  transition: all 1s; */
+  display: flex;
+
+}
+/* .flex .image{
+  transition-delay: 100ms;
+}
+.flex2{
+  scroll-behavior: smooth;
+  opacity: 2;
+} */

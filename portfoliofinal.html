@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: small;">
+<head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="portfoliofinal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- FontAwesome for Social Media Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+
+    
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+  <!-- Hero Section -->
+  <!-- <section class="hero d-flex align-items-center text-white">
+    <div class="container">
+        <p class="mt-5 ms-5 fs-4">SAMIA CHOWDHURY</p>
+        <h1 class="display-1 fw-bold ms-4 text-primary" style="font-family: 'Macondo', cursive; font-size: 130px;">Hello <br> World</h1>
+        <p class="mt-3 ms-5 fs-5 text-primary">
+            👋 My name is Samia. <br>
+            "I'm a STUDENT. Nice to meet you! <br>
+            Explore my work below and let me know what you think."
+        </p>
+    </div>
+</section> -->
+    
+
+<section class="hero d-flex align-items-center text-white vh-100">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Left Column: Image -->
+            <div class="col-md-6 text-center">
+                <img src="/images/WhatsApp Image 2025-02-03 at 13.06.27 2.jpeg" class="rounded-circle" alt="Samia's Picture" style="max-width: 80%; border: 5px solid #305f72;">
+            
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/samia-chowdhury-119809275/?trk=public_profile-settings_edit-profile-content&originalSubdomain=bd" target="_blank" class="linkedin">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/samiachowdhuryy" target="_blank" class="github">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <!-- <a href="https://twitter.com/yourhandle" target="_blank" class="twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a> -->
+                    <a href="https://www.instagram.com/yourprofile" target="_blank" class="instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+
+
+            
+            <!-- Right Column: Text -->
+            <div class="col-md-6">
+                <p class="mt-5 fs-4">SAMIA CHOWDHURY</p>
+                <h1 class="display-1 fw-bold" style="font-family: 'Macondo', cursive; font-size: 130px;color:#305f72;">Hello <br> World</h1>
+                <p class="mt-3 fs-5" style="color: #6b6a6a;">
+                    👋 My name is Samia. <br>
+                    "I'm a STUDENT. Nice to meet you! <br>
+                    Explore my Portfolio and let me know what you think."
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section class="container my-5">
+    <div class="text-center" data-aos="fade-up">
+        <h2 class="text-success fw-bold " style="color: #305f72;">Who Am I?</h2>
+        <p class="fs-5 text-muted">
+            Hello! I'm Samia Chowdhury, a CSE student at Premier University, currently in my 3rd semester. I'm passionate about learning and exploring core computing concepts, 
+            always eager to dive deeper into the world of technology and innovation. <br> <br>
+
+My academic journey has fueled my curiosity, and I'm actively seeking opportunities for higher education and
+ research in computer science. I believe in continuous growth and strive to expand my knowledge in both theoretical and practical aspects of the field.
+
+If you're interested in collaborating or discussing ideas, feel free to connect! 🚀✨
+        </p>
+    </div>
+</section>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>AOS.init();</script>
+
+
+<!-- Education Section -->
+<section id="education" style="text-align: center; padding: 50px;">
+    <h2>
+        <i class="fas fa-graduation-cap education-icon"></i> Education
+    </h2>
+    <div class="education-container">
+        <div class="education">
+            <h3>
+                <i class="fas fa-university education-icon"></i> Bachelor’s Degree in Computer Science and Engineering
+            </h3>
+            <p>Premier University, 44th Batch</p>
+        </div>
+        <div class="education">
+            <h3>
+                <i class="fas fa-school education-icon"></i> College
+            </h3>
+            <p>Bangladesh Mohila Samity Girls High School and College, 2021</p>
+        </div>
+    </div>
+</section>
+
+<!-- FontAwesome for Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+<style>
+    /* General Styling */
+    #education {
+        max-width: 800px;
+        margin: auto;
+    }
+    .education-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .education {
+        padding: 20px;
+        width: 100%;
+        text-align: center;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    .education-icon {
+        font-size: 1.5em;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        h2 {
+            font-size: 1.8rem;
+        }
+        h3 {
+            font-size: 1.3rem;
+        }
+        .education-icon {
+            font-size: 1.2em;
+        }
+    }
+
+    @media (max-width: 480px) {
+        h2 {
+            font-size: 1.6rem;
+        }
+        h3 {
+            font-size: 1.2rem;
+        }
+        .education-icon {
+            font-size: 1em;
+        }
+    }
+</style>
+
+
+
+
+
+
+<!-- skills -->
+<section class="skills-section py-5">
+    <div class="container text-center">
+        <h2 class="mb-4">My Skills</h2>
+        <div class="row">
+            <!-- HTML -->
+            <div class="col-md-3 col-sm-6">
+                <div class="skill-card">
+                    <i class="fab fa-html5"></i>
+                    <h5><b>HTML</b> <br> beginner</h5>
+                </div>
+            </div>
+
+            <!-- CSS -->
+            <div class="col-md-3 col-sm-6">
+                <div class="skill-card">
+                    <i class="fab fa-css3-alt"></i>
+                    <h5><b>CSS</b> <br> beginner</h5>
+                </div>
+            </div>
+
+            <!-- JavaScript -->
+            <div class="col-md-3 col-sm-6">
+                <div class="skill-card">
+                    <i class="fab fa-js"></i>
+                    <h5><b>JavaScript</b> <br> beginner</h5>
+                </div>
+            </div>
+
+            <!-- Bootstrap -->
+            <div class="col-md-3 col-sm-6">
+                <div class="skill-card">
+                    <i class="fab fa-bootstrap"></i>
+                    <h5><b>Bootstrap</b> <br> beginner</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- projects -->
+<section id="projects" class="py-5 p-5">
+    <div class="container">
+            <h2 class="text-center mb-4">My Projects</h2>
+        <div class="row">
+                
+                <!-- First Row (Two Projects Side by Side) -->
+            <div class="col-md-6">
+                <div class="card project-card" style="">
+                    <div class="project-img">
+                            <!-- <img src="/images/ajib desher manush sokol.jpeg" class="card-img-top " alt="Project 1"> -->
+                        <div class="overlay">
+                                <h5>Project Name 1</h5>
+                        </div>
+                    </div>
+                    <div class="card-body text-white">
+                            <p class="card-text">Blog Demo</p>
+                            <a href="/blog/blog.html" class="btn btn-light">View Project</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-md-6">
+                <div class="card project-card bg-gradient-purple">
+                    <div class="project-img">
+                            <!-- <img src="images/project3.jpg" class="card-img-top" alt="Project 3"> -->
+                        <div class="overlay">
+                                <h5>Project Name 3</h5>
+                        </div>
+                    </div>
+                    <div class="card-body text-white">
+                            <p class="card-text">Comprehensive HTML Guide</p>
+                            <a href="./Comprehensive HTML Guide/ip.html" class="btn btn-light">GitHub</a>
+                    </div>
+                </div>
+            </div>
+    
+                <!-- Second Row (One Project Below, Centered) -->
+            <div class="col-md-8 mx-auto mt-3">
+                <div class="card project-card bg-gradient-orange">
+                    <div class="project-img">
+                            <!-- <img src="images/project2.jpg" class="card-img-top" alt="Project 2"> -->
+                        <div class="overlay">
+                                <!-- <h5>Project Name 2</h5> -->
+                        </div>
+                    </div>
+                    <div class="card-body text-white">
+                            <!-- <p class="card-text text-center p-3">More Coming <br> Soon....</p> -->
+                            <!-- <a href="https://your-live-demo.com" class="btn btn-light">Live Demo</a> -->
+                    </div>
+
+
+                    <div class="alert alert-warning text-center">
+                            <strong>Warning!</strong> More Coming Soon...
+                        </div>
+                </div>
+
+            </div>
+    
+        </div>
+    </div>
+</section>
+
+
+
+<!-- hobbies and interests -->
+<h1 style="text-align: center; padding: 40px;"><b>HOBBIES AND INTERESTS</b></h1>
+
+<p style="text-align: center;">In my leisure time, I enjoy the creative expression of painting, <br>finding it a relaxing and fulfilling way to explore my 
+   imagination and bring visual ideas to life.
+    Here are some of my paintings, </p>
+
+<div class="container mt-4" style="padding: 40px">
+   <div class="row">
+       <div class="col-md-3">
+           <div class="image-wrapper">
+               <img src="/images/flower stamp er ta 3.jpeg" class="img-fluid" alt="Image 1">
+           </div>
+       </div>
+       <div class="col-md-3">
+           <div class="image-wrapper">
+               <img src="/images/ajib desher manush sokol.jpeg" class="img-fluid" alt="Image 2">
+           </div>
+       </div>
+       <div class="col-md-3">
+           <div class="image-wrapper">
+               <img src="/images/choshma painting.jpeg" class="img-fluid" alt="Image 3">
+           </div>
+       </div>
+       <div class="col-md-3">
+           <div class="image-wrapper">
+               <img src="/images/no face.jpeg" class="img-fluid" alt="Image 4">
+           </div>
+       </div>
+   </div>
+</div>
+
+
+
+<!-- <div class="quote-box">
+    <h2 style="color: #305f72;">QUOTE OF THE DAY</h2>
+    <p class="pa text-muted">"Some people attach snowboards to their feet, very few attach them to their souls."<br>
+
+        - Shaun White</p>
+</div> -->
+
+    
+    
+    
+
+    <!-- Contact Section -->
+     
+    <!-- <section id="contact" class="container my-5 text-center">
+        <h2>Contact Me</h2>
+        <p>Email: your.email@example.com</p>
+        <p>Phone: +1234567890</p>
+    </section> -->
+
+    
+    
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 My Portfolio. All Rights Reserved.</p>
+    </footer>
+
+    <script src="portfoliofinal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

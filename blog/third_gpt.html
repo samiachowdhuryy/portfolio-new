@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="blog.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            margin-bottom: 450px;
+        }
+        .nav-links ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        .text-box h3 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        .text-box p {
+            margin-bottom: 20px;
+        }
+        .visit-btn {
+            text-decoration: none;
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .flip-card {
+            perspective: 1000px;
+        }
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+        .flip-card-front,
+        .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+        }
+        .flip-card-back {
+            transform: rotateY(180deg);
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .line h1 {
+            font-size: 2.5rem;
+            margin-top: 40px;
+        }
+        .line p {
+            margin: 20px 0;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+        }
+        footer .footer-col h4 {
+            margin-bottom: 10px;
+        }
+        footer .footer-col ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        footer .footer-col ul li a {
+            text-decoration: none;
+            color: #ccc;
+            transition: color 0.3s;
+        }
+        footer .footer-col ul li a:hover {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./image/logo.png" alt="Logo">
+        </div>
+        <nav class="header">
+            <a href="index_html"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Course</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="text-box">
+            <h3>What It Really Means To Build A Personal Brand on Social Media</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a href="about.html" class="visit-btn">Visit us to know more</a>
+        </section>
+
+        <section class="row">
+            <div class="flip-card column" style="margin-left: 145px;">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="./image/third.jpg" alt="Avatar" style="width:300px;height:300px;">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>John Doe</h1>
+                        <p>Architect & Engineer</p>
+                        <p>We love that guy</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card column">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="./image/second.jpg" alt="Avatar" style="width:300px;height:300px;">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>John Doe</h1>
+                        <p>Architect & Engineer</p>
+                        <p>We love that guy</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card column">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="./image/first.jpg" alt="Avatar" style="width:300px;height:300px;">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>John Doe</h1>
+                        <p>Architect & Engineer</p>
+                        <p>We love that guy</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="line">
+            <h1>TheGem: No job is insignificant when passion meets purpose</h1>
+            <p>Writing: Start a blog, write a book,<br> or freelance as a content writer, copywriter, or ghostwriter.</p>
+            <img src="./image/third.jpg" alt="" style="width: 75%; margin: 0 auto; display: block;">
+            <p style="text-align: center; font-size: 30px; color: gray;">Exploring Writing as a Passion and Career</p>
+            <p>Writing is one of the most versatile and rewarding passions you can pursue. Whether you’re expressing yourself through personal essays, creating engaging content for businesses, or crafting stories that transport readers to another world, writing offers endless possibilities for creativity and connection. Here’s a closer look at some of the most popular ways to turn your love for writing into a fulfilling career or side hustle.</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container1">
+            <div class="row1">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Services</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Affiliate Program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get Help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Order Status</a></li>
+                        <li><a href="#">Payment Options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Online Shop</h4>
+                    <ul>
+                        <li><a href="#">Watch</a></li>
+                        <li><a href="#">Bag</a></li>
+                        <li><a href="#">Shoes</a></li>
+                        <li><a href="#">Dress</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
